@@ -1,0 +1,203 @@
+:root{
+    --first_color: rgb(220, 0, 0);
+    --second_color: white;
+    --third_color: black;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--third_color);
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url("immagini/kimi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#overlay_header{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titolo{
+    color: var(--second_color);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    text-align: center;
+}
+
+article{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75%;
+    padding: 5px;
+}
+
+#driver_input{
+    border: 1px solid silver;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+#input_btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    margin-left: 10px;
+    padding: 5px;
+    color: var(--second_color);
+    border-radius: 20px;
+    background-color: var(--first_color);
+    height: 40px;
+    width: 100px;
+}
+
+#input_btn:hover{
+    background-color: rgb(172, 0, 0);
+}
+
+#container_choose_driver{
+    text-align: center;
+}
+
+#container_choose_driver span{
+    font-weight: bolder;
+}
+
+
+
+#choose_driver{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+a.container_driver{
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--third_color);
+    margin-bottom: 15px;
+}
+
+a.container_driver:hover{
+    background-color: silver;
+}
+
+div.bio{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px;
+}
+
+@media (max-width: 800px){
+    div.bio{
+        flex-direction: column;
+        justify-content: baseline;
+    }
+}
+
+h2.driver_name{
+    text-decoration: none;
+    font-size: larger;
+    color: var(--third_color);
+    font-weight: bold;
+}
+
+
+#all_the_drivers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spotify-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#podcast-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#podcast-container a{
+    text-decoration: none;
+    color: var(--third_color);
+}
+
+div.podcast-box{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 260px;
+    background-color: rgb(231, 231, 231);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+div.podcast-box:hover{
+    background-color: silver;
+}
+
+div.podcast-box img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+div.podcast-box h3
+{
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+div.podcast-box h5{
+    margin: 0;
+    color: var(--first_color);
+}
+
+@media (max-width: 800px){
+    section{
+        width: 90%;
+    }
+}
+
+ @media (max-width: 1000px){
+    div.podcast-box {
+        margin: 5px;
+    }
+ }
